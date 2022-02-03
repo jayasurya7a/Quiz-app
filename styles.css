@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: Gotham Rounded;
+
 
 
 }
@@ -38,8 +38,11 @@ body.wrong {
     max-width: 80%;
     background-color: white;
     border-radius: 5px;
-    padding: 10px;
+    padding: 50px;
     box-shadow: 0 0 10px 2px;
+    font-weight: bold;
+    font-size: 150%;
+
 }
 
 .btn-grid {
@@ -57,7 +60,8 @@ body.wrong {
     padding: 10px 10px;
     color: white;
     outline: none;
-
+    font-weight: bold;
+    font-size: large;
 
 }
 

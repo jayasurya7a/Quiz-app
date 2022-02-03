@@ -78,35 +78,50 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: "Commonly used data types DO NOT include:",
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'Strings', correct: false },
+      { text: 'Booleans', correct: false },
+      { text: 'Alerts', correct: true},
+      { text: 'Numbers', correct: false}
+    
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: "Arrays in JavaScript can be used to store ______.",
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Numbers and Strings', correct: false },
+      { text: 'Other Arrays', correct: false},
+      { text: 'Booleans', correct: false },
+      { text: 'All of the above', correct: true }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: ' How can you add a single line comment in a JavaScript?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: '<!--Comment-->', correct: false },
+      { text: '\'Comment', correct: false },
+      { text: '//Comment', correct: true },
+      { text: 'None of the Above', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'How do you round the number 7.25, to the nearest integer?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'Math.round(7.25)', correct: true },
+      { text: 'rnd(7.25)', correct: false },
+      { text: 'Math.rnd(7.25)', correct: false },
+      { text: 'round(7.25)', correct: false }
+    ]
+  },
+  {
+    question: 'Which operator is used to assign a value to a variable?',
+    answers: [
+      { text: '-', correct: false },
+      { text: '*', correct: false },
+      { text: '=', correct: true },
+      { text: 'X', correct: false }
     ]
   }
+
 ]
