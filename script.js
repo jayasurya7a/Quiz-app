@@ -4,6 +4,7 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
+
 let shuffledQuestions, currentQuestionIndex
 
 startButton.addEventListener('click', startGame)
@@ -57,8 +58,11 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
+    swal("Good job!", "You rocked the quiz!", "success");
     startButton.innerText = 'Restart'
     startButton.classList.remove('hide')
+    startButton.style.color="black"
+    startButton.style.backgroundColor="gold"
   }
 }
 
@@ -90,7 +94,7 @@ const questions = [
   {
     question: "Arrays in JavaScript can be used to store ______.",
     answers: [
-      { text: 'Numbers and Strings', correct: false },
+      { text: 'Strings', correct: false },
       { text: 'Other Arrays', correct: false},
       { text: 'Booleans', correct: false },
       { text: 'All of the above', correct: true }
@@ -106,12 +110,12 @@ const questions = [
     ]
   },
   {
-    question: 'How do you round the number 7.25, to the nearest integer?',
+    question: 'How do you round a number to its nearest integer?',
     answers: [
-      { text: 'Math.round(7.25)', correct: true },
-      { text: 'rnd(7.25)', correct: false },
-      { text: 'Math.rnd(7.25)', correct: false },
-      { text: 'round(7.25)', correct: false }
+      { text: 'Math.round()', correct: true },
+      { text: 'rnd()', correct: false },
+      { text: 'Math.rnd()', correct: false },
+      { text: 'round()', correct: false }
     ]
   },
   {

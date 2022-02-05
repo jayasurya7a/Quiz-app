@@ -62,11 +62,12 @@ body.wrong {
     outline: none;
     font-weight: bold;
     font-size: large;
-
+    cursor: pointer;
 }
 
 .btn:hover {
     border-color: black;
+    background-color: hsl(var(--hue), 100%, 40%);
 
 }
 
@@ -76,7 +77,26 @@ body.wrong {
 }
 
 .btn.wrong {
-    --hue: var(--hue-wrong)
+    --hue: var(--hue-wrong);
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .start-btn,
