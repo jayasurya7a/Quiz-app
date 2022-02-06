@@ -85,8 +85,8 @@ const questions = [
     question: "Commonly used data types DO NOT include:",
     answers: [
       { text: 'Strings', correct: false },
-      { text: 'Booleans', correct: false },
-      { text: 'Alerts', correct: true},
+      { text: 'Alerts', correct: true },
+      { text: 'Booleans', correct: false},
       { text: 'Numbers', correct: false}
     
     ]
@@ -95,9 +95,9 @@ const questions = [
     question: "Arrays in JavaScript can be used to store ______.",
     answers: [
       { text: 'Strings', correct: false },
-      { text: 'Other Arrays', correct: false},
-      { text: 'Booleans', correct: false },
-      { text: 'All of the above', correct: true }
+      { text: 'Booleans', correct: false},
+      { text: 'Other Arrays', correct: false },
+      { text: 'All the above', correct: true }
     ]
   },
   {
@@ -106,16 +106,16 @@ const questions = [
       { text: '<!--Comment-->', correct: false },
       { text: '\'Comment', correct: false },
       { text: '//Comment', correct: true },
-      { text: 'None of the Above', correct: false }
+      { text: 'None are correct', correct: false }
     ]
   },
   {
     question: 'How do you round a number to its nearest integer?',
     answers: [
       { text: 'Math.round()', correct: true },
-      { text: 'rnd()', correct: false },
+      { text: 'round.Math()', correct: false },
       { text: 'Math.rnd()', correct: false },
-      { text: 'round()', correct: false }
+      { text: 'rnd.Math()', correct: false }
     ]
   },
   {
