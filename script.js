@@ -3,7 +3,8 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
-
+const options=document.querySelectorAll(".option");
+console.log(options);
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -69,15 +70,18 @@ function selectAnswer(e) {
 function setStatusClass(element, correct) {
   clearStatusClass(element)
   if (correct) {
-    element.classList.add('correct')
+    element.classList.add('correct');
+    element.classList.add('disable');
   } else {
-    element.classList.add('wrong')
+    element.classList.add('wrong');
+    element.classList.add('disable');
   }
 }
 
 function clearStatusClass(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
+  element.classList.remove('disable');
 }
 
 const questions = [
