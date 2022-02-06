@@ -98,7 +98,9 @@ img {
     justify-content: center;
     align-items: center;
 }
-
+.btn.disable{
+  pointer-events: none;
+}
 .start-btn,
 .next-btn {
     font-size: 1.5rem;
